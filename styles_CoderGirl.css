@@ -1,0 +1,203 @@
+html {
+  height: 100%;
+}
+
+body, html {
+    height: 100%;
+    color: #0000ff;
+    line-height: 1.8;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.btn-group button {
+    background-color: white;
+    border: 2px
+    solid white;
+    color: blue;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 40px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #4587E6;
+  color: white;
+}
+
+.btn-group span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-group span:after {
+  content: '⤀';
+  position: absolute;
+  transition: 0.5s;
+  color: white;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+
+}
+
+.btn-group:hover span {
+  padding-right: 25px;
+}
+
+.btn-group:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* To The Top Button */
+#btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: dodgerblue;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#btn:hover {
+  background-color: dodgerblue;
+  color: white;
+  border: solid dodgerblue;
+}
+
+/* Parallax Images */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Start Image */
+.bgimg-1 {
+    background-image: url("https://qph.fs.quoracdn.net/main-qimg-97df156ef9559b93e1c657a39e416df5.webp");
+    min-height: 100%;
+    position: relative;
+}
+.bgimg-1-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+/* Middle Image */
+.bgimg-2 {
+    background-image: url("https://arbrealettres.files.wordpress.com/2012/11/rene-magritte-the-banquet-1958.jpg");
+    min-height: 100%;
+    position: relative;
+}
+
+/* Middle + End Text */
+.bgimg-2-text, .bgimg-3-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* End Image */
+.bgimg-3 {
+    background-image: url("https://images.curiator.com/images/t_x/art/ujvesdu7attqabcxoarn/rene-magritte-the-sixteenth-of-september-1956.jpg");
+    min-height: 100%;
+    position: relative;
+}
+
+/* Bottom Menu Image */
+.bgimg-4 {
+    background-image: url("https://www.kunstkopie.nl/kunst/wassily_kandinsky/kandinsky_himmelblau.jpg");
+    min-height: 100%;
+    position: relative;
+  }
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: ;
+    text-align: center;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#clip{
+   background-image: url("https://qph.fs.quoracdn.net/main-qimg-97df156ef9559b93e1c657a39e416df5.webp");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 100%;
+   position: relative;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  text-align: center;
+  font-size: 300px;
+  font-weight: bold;
+
+}
+
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+nav {
+}

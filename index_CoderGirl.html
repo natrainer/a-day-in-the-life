@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="styles_CoderGirl.css">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+ </head>
+
+
+ <body>
+
+   <div class="btn-group" id="Menu">
+      <a href="#Start"><button onclick="document.getElementById('Start').style.display='block'" style="width:33.3%"><span>Start  </span></button></a>
+      <a href="#Middle"><button onclick="document.getElementById('Middle').style.display='block'" style="width:33.3%"><span>Middle  </span></button></a>
+      <a href="#End"><button onclick="document.getElementById('End').style.display='block'" style="width:33.3%"><span>End  </span></button></a>
+   </div>
+
+<button onclick="topFunction()" id="btn" title="Go to top">^</button>
+
+
+<div class="bgimg-1">
+ <div class="bgimg-1-text">
+    <h1 id="Start">Start</h1>
+    <h3>This is some stuff that I do at the start of my day.</h3>
+    <button><a href="https://hypem.com/track/274f1/mura+masa+-+Day+23%3A+Have+Faith+In+Me#" target="_blank">Click Here for Your Morning Tune 🎵</a></button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="">
+   <h3>I lie there.</h3>
+     <p>I really like getting up early<br>
+       in the morning and lieing there.<br>
+        <i>It's the best.</i></p>
+  </div>
+  <div class="column" style="">
+    <h3>I pick out clothes.</h3>
+      <p>Then I put them on.</p>
+  </div>
+  <div class="column" style="">
+     <h3>I eat breakfast.</h3>
+      <p>I cook breakfast in my skillet.<br>
+        But, sometimes <br>
+        I go to the coffee shop.</p>
+  </div>
+ </div>
+
+
+
+<div class="bgimg-2" id="Middle">
+  <div class="bgimg-2-text">
+    <h1>Middle</h1>
+      <h3>This is some stuff that I do in the middle of my day.</h3>
+      <button><a href="https://hypem.com/track/1xn35/Dr.+Dre+feat.+Snoop+Dogg+-+Nuthin'+but+a+'G'+Thang+(Metic's+Summertime+Bootleg)" target="_blank">Click Here for Your Afternoon Tune 🎵</a></button>
+  </div>
+ </div>
+
+
+ <div class="row">
+   <div class="column" style="">
+     <h3>I go to my j-o-b.</h3>
+      <p> I say hi to everyone, <br>
+        and I go to meetings.</p>
+          <p> Sometimes, I don't go to the j-o-b<br>
+    office, and I work at the coffee shop.</p>
+    <p> I mostly work on the computer,<br>
+        and I drink coffee.</p>
+  </div>
+  <div class="column" style="">
+     <h3>I make and publicize designs<br>
+        at my j-o-b.</h3>
+      <p>I make graphics, manage <br>
+        social media platforms,<br>
+        and I update websites.</p>
+
+  </div>
+  <div class="column" style="">
+    <h3>Sometimes, I leave my j-o-b, <br>
+      and I go to studio.</h3>
+      <p> Working in my studio is<br>
+        the greatest part of my day.</p>
+        <p> I think about artwork, <br>
+          I read about artwork,<br>
+          and I create artwork in my studio.</p>
+  </div>
+</div>
+</>
+
+
+
+<div class="bgimg-3" id="End">
+  <div class="bgimg-3-text">
+      <h1>End</h1>
+        <h3>This is some stuff that I do at the End of my day.</h3>
+        <button><a href="https://www.instagram.com/p/Bk76flcgXwO/?taken-by=nat.rainer#" target="_blank">Click Here for Your Evening Tune 🎵</a></button>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column" style="">
+    <h3>I go home.</h3>
+      <p> I think about what I want <br>
+       to make for dinner on my way home<br>
+        Then I make dinner.</p>
+  </div>
+  <div class="column" style="">
+    <h3>I wind down.</h3>
+      <p> I put on a record.<br>
+      I drink Beer. <br>
+      Sometimes, I drink two Beers.</p>
+  </div>
+  <div class="column" style="">
+    <h3>Then I lie in bed.</h3>
+      <p>I read until I fall asleep.</p>
+  </div>
+</div>
+
+<div>
+<p id="clip"><a href="#Menu">REPEAT</a></p>
+</div>
+
+<script>
+// When the user scrolls down 500px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("btn").style.display = "block";
+    } else {
+        document.getElementById("btn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+ </body>
+</html>
